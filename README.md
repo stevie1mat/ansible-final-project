@@ -45,7 +45,7 @@ Make sure you’re on a machine with Ansible installed and access to your `.pem`
 chmod 400 ./proj_ansible.pem
 ```
 
-### 2. Run the Ansible code
+### 3. Run the Ansible code
 ```bash
 ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -i inventory_static.ini install_httpd.yml
 ```
