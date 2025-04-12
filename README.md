@@ -14,6 +14,8 @@ Automated Web Server Setup on AWS EC2 using Ansible with Static Inventory
 - **Course:** ACS730 – Cloud Automation and Control Systems  
 - **Semester:** Winter 2025
 
+---
+
 - **Name:** Steven Mathew  
 - **Student Id:** 170069231
 - **GitHub Repo:** [ansible-final-project](https://github.com/stevie1mat/ansible-final-project)  
