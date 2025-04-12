@@ -1,6 +1,6 @@
 ---
-- name: Configure Apache Webservers
-  hosts: tag_Webserver3,tag_Webserver4
+- name: Configure Apache Webserver
+  hosts: webservers
   become: yes
 
   tasks:
@@ -10,12 +10,13 @@
         state: present
 
     - name: Start and enable Apache service
-      systemd:
+      service:
         name: httpd
         state: started
-        enabled: yes
+        enabled: true
 
     - name: Create index.html
       copy:
         dest: /var/www/html/index.html
-        content: "✅ Hello from {{ inventory_hostname }} - Apache is running 🎉"
+        content: |
+          ✅ Hello from {{ inventory_hostname }} - Apache is running 🎉

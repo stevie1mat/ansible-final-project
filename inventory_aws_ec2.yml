@@ -3,10 +3,9 @@ regions:
   - us-east-1
 filters:
   tag:Name:
-    - Webserver3
-    - Webserver4
+    - Dev-Webserver3
 keyed_groups:
   - key: tags.Name
     prefix: tag
 hostnames:
-  - public_ip_address
+  - ec2_public_ip_address
