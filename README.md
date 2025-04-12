@@ -44,7 +44,9 @@ Make sure you’re on a machine with Ansible installed and access to your `.pem`
 ```bash
 chmod 400 ./proj_ansible.pem
 
-### 2. Run the Ansible Playbook
+---
+
+### 2. Set Proper Permissions for SSH Key
 
 ```bash
-ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -i inventory_static.ini install_httpd.yml
+chmod 400 ./proj_ansible.pem
