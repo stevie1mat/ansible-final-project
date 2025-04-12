@@ -7,20 +7,19 @@ Automated Web Server Setup on AWS EC2 using Ansible with Static Inventory
 
 ## 🧠 Team Information
 
-- **Name:** Deepika Paneer Selvam
-- **Student Id:** 141586248
-- **Institution:** Seneca College  
-- **Course:** ACS730 – Cloud Automation and Control Systems  
-- **Semester:** Winter 2025
-
----
-
 - **Name:** Steven Mathew  
 - **Student Id:** 170069231
 - **Institution:** Seneca College  
 - **Course:** ACS730 – Cloud Automation and Control Systems  
 - **Semester:** Winter 2025
 
+  ---
+
+- **Name:** Deepika Paneer Selvam
+- **Student Id:** 141586248
+- **Institution:** Seneca College  
+- **Course:** ACS730 – Cloud Automation and Control Systems  
+- **Semester:** Winter 2025
 
 
 ---
