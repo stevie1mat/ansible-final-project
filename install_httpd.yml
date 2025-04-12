@@ -1,0 +1,21 @@
+---
+- name: Configure Apache Webservers
+  hosts: tag_Webserver3,tag_Webserver4
+  become: yes
+
+  tasks:
+    - name: Install Apache
+      yum:
+        name: httpd
+        state: present
+
+    - name: Start and enable Apache service
+      systemd:
+        name: httpd
+        state: started
+        enabled: yes
+
+    - name: Create index.html
+      copy:
+        dest: /var/www/html/index.html
+        content: "✅ Hello from {{ inventory_hostname }} - Apache is running 🎉"
