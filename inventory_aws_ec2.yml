@@ -1,0 +1,11 @@
+plugin: aws_ec2
+regions:
+  - us-east-1
+filters:
+  tag:Name:
+    - Dev-Webserver3
+keyed_groups:
+  - key: tags.Name
+    prefix: tag
+hostnames:
+  - ec2_public_ip_address
