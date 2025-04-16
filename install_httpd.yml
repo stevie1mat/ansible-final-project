@@ -19,4 +19,15 @@
       copy:
         dest: /var/www/html/index.html
         content: |
-          ✅ Hello from {{ inventory_hostname }} - Apache is running 🎉
+          ✅ Hello from {{ inventory_hostname }} - Apache is running 🎉<br><br>
+          👩‍💻 Deepika Paneer Selvam & 👨‍💻 Steven Mathew were here!<br><br>
+          <img src="cat.webp" alt="Cat" width="300"/>
+
+    - name: Install AWS CLI
+      yum:
+        name: awscli
+        state: present
+
+    - name: Download cat.webp from S3
+      command: >
+        aws s3 cp s3://ansibleproject279/cat.webp /var/www/html/cat.webp
