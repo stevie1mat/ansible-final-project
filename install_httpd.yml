@@ -30,4 +30,4 @@
 
     - name: Download cat.webp from S3
       command: >
-        aws s3 cp s3://ansibleproject279/cat.webp /var/www/html/cat.webp
+        aws s3 cp s3://ansibleimagehttpd/cat.webp /var/www/html/cat.webp
