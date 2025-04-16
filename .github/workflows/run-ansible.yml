@@ -1,0 +1,19 @@
+# .github/workflows/run-ansible.yml
+
+name: Run Ansible Playbook
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run-ansible:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    - name: Install Ansible
+      run: sudo apt update && sudo apt install -y ansible
+
+    - name: Run playbook
+      run: ansible-playbook playbook.yml -i inventory
